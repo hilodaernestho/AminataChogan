@@ -1,0 +1,263 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Liste parfum Aminata DIAME Chogan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  /* Layout: bandeau violet-rose, barre de recherche collante, grille de fiches parfum */
+  :root{
+    --bg:#faf2f7; --card:#ffffff; --ink:#2a1640; --muted:#6f6285; --line:#eadff0;
+    --accent:#c0185f; --accent2:#6b2bb3; --chip:#f1e6fa; --bar:#ffffffee; --field:#ffffff;
+    --band-a:#2a0e4a; --band-b:#a3185f; --shadow:0 2px 10px rgba(60,20,90,.12);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1a0f2b; --card:#2a1a44; --ink:#f5edfb; --muted:#b9a9cc; --line:#3d2a5c;
+      --accent:#ff7ab6; --accent2:#c9a2ff; --chip:#3d2a5c; --bar:#1a0f2bee; --field:#2a1a44;
+      --shadow:0 2px 10px rgba(0,0,0,.4); color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1a0f2b; --card:#2a1a44; --ink:#f5edfb; --muted:#b9a9cc; --line:#3d2a5c;
+    --accent:#ff7ab6; --accent2:#c9a2ff; --chip:#3d2a5c; --bar:#1a0f2bee; --field:#2a1a44;
+    --shadow:0 2px 10px rgba(0,0,0,.4); color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+       padding-block:0 24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+  header{margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:22px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px));
+         background:linear-gradient(135deg,var(--band-a),var(--band-b));color:#fff;text-align:center}
+  header h1{margin:0;font-size:1.5rem;line-height:1.2;text-wrap:balance}
+  header p{margin:6px 0 0;color:#ffe3f1;font-size:.92rem}
+  .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bar);backdrop-filter:blur(6px);
+       margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));
+       display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+  .bar input,.bar select{padding:12px 14px;border-radius:12px;border:1px solid var(--line);font-size:1rem;background:var(--field);color:var(--ink);min-width:0}
+  .bar input{flex:1 1 100%}
+  .bar select{flex:1 1 140px}
+  .bar input:focus-visible,.bar select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+  #count{flex:1 1 100%;color:var(--muted);font-size:.85rem}
+  main{max-width:1100px;margin:0 auto;padding-block:18px 6px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:16px 12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 14px 12px;box-shadow:var(--shadow);position:relative;min-width:0}
+  .num{position:absolute;top:-10px;left:12px;background:var(--accent2);color:var(--bg);font-weight:800;border-radius:8px;padding:2px 10px;font-size:.95rem;font-variant-numeric:tabular-nums}
+  .card h2{margin:6px 0 0;font-size:1.1rem;color:var(--accent);overflow-wrap:anywhere}
+  .brand{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+  .gender{display:inline-block;font-size:.7rem;background:var(--chip);color:var(--accent2);border-radius:8px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+  table{width:100%;border-collapse:collapse;font-size:.92rem;font-variant-numeric:tabular-nums}
+  td{padding:6px 4px;border-top:1px solid var(--line)}
+  td.code{font-family:ui-monospace,Menlo,monospace;color:var(--muted)}
+  td.price{text-align:right;font-weight:700}
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 0}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;padding-top:12px}
+</style>
+<header>
+  <h1>Aminata DIAME Chogan</h1>
+  <p>Liste parfum : tape un nom, une marque ou un numéro</p>
+</header>
+<div class="bar">
+  <input id="q" type="search" placeholder="Ex : 118, sauvage, tom ford, T045…" autocomplete="off">
+  <select id="brand" aria-label="Marque"><option value="">Toutes les marques</option></select>
+  <select id="sort" aria-label="Tri">
+    <option value="num">Tri : numéro</option>
+    <option value="name">Tri : nom A→Z</option>
+    <option value="price">Tri : prix croissant</option>
+  </select>
+  <div id="count"></div>
+</div>
+<main id="list"></main>
+<footer>Catalogue recopié depuis les images. Les codes sont ceux imprimés : en cas de doute, vérifie avec la vendeuse.</footer>
+
+<script>(function(){
+const TIERS = {
+  A:[["70 ml",35],["30 ml",18],["15 ml",11.9]],
+  B:[["70 ml",57],["30 ml",29.5],["15 ml",17.9]],
+  C:[["70 ml",48],["30 ml",25.5],["15 ml",14.9]],
+  D:[["70 ml",45],["30 ml",23.5],["15 ml",13.9]],
+  E:[["50 ml",52],["15 ml",19.9]],
+  F:[["50 ml",65],["15 ml",22.9]],
+  G:[["70 ml",52],["30 ml",18],["15 ml",11.9]],
+  Z:[["100 ml",35],["30 ml",18],["15 ml",11.9]]
+};
+// [numéro, nom, marque, tarif, codes (dans l'ordre des tailles)]
+const DATA = [
+["1","One Million","P. Rabanne","A","001","301","T001"],
+["2","Acqua Di Gio","G. Armani","A","002","302","T002"],
+["3","Fahrenheit","C. Dior","A","003","303","T003"],
+["4","The One","D&G","A","004","304","T004"],
+["6","Opium","Y. Saint Laurent","A","006","306","T006"],
+["7","J'Adore","C. Dior","A","007","307","T007"],
+["10","Alien","T. Mugler","A","010","310","T010"],
+["11","Light Blue","D&G","A","011","311","T311"],
+["12","Eau Sauvage","C. Dior","A","012","312","T012"],
+["14","Manifesto","Y. Saint Laurent","A","014","314","T014"],
+["15","Roma","L. Biagiotti","A","015","315","T015"],
+["16","Le Mâle","J.P. Gaultier","A","016","316","T016"],
+["18","Déclaration","Cartier","A","018","318","T018"],
+["19","Lady Million","P. Rabanne","A","019","319","T019"],
+["20","La Nuit de l'Homme","Y. Saint Laurent","A","020","320","T020"],
+["21","Light Blue","D&G","A","021","321","T021"],
+["22","Terre d'Hermès","Hermès","A","022","322","T022"],
+["23","Hypnotic Poison","C. Dior","A","023","323","T023"],
+["24","Chanel n°5","Chanel","A","024","324","T024"],
+["25","For Her","N. Rodriguez","A","025","325","T025"],
+["26","Flower","Kenzo","A","026","326","T026"],
+["27","Trésor","Lancôme","A","027","327","T027"],
+["28","Angel","T. Mugler","A","028","328","T028"],
+["29","Eau D'Issey","I. Miyake","Z","029","329","T029"],
+["30","Black XS","P. Rabanne","A","030","330","T030"],
+["32","Spice Bomb","Viktor & Rolf","A","032","332","T032"],
+["33","Black Code","G. Armani","A","033","333","T033"],
+["37","Man","Bulgari","A","037","337","T037"],
+["38","Bleu","Chanel","A","038","338","T038"],
+["39","Miss Dior Chérie","C. Dior","A","039","339","T039"],
+["40","Hypnose","Lancôme","A","040","340","T040"],
+["42","La Vie est Belle","Lancôme","A","042","342","T042"],
+["44","Silver Mountain Water","Creed","C","044","344","T044"],
+["47","Crystal Noir","Versace","A","047","347","T047"],
+["48","Allure","Chanel","A","048","348","T048"],
+["49","Dolce","D&G","A","049","349","T049"],
+["51","Coco Mademoiselle","Chanel","A","051","351","T051"],
+["52","Pasha 150","Cartier","A","052","352","T052"],
+["53","Narciso","N. Rodriguez","A","053","353","T053"],
+["54","Black Orchid","T. Ford","A","054","354","T054"],
+["55","Black Opium","Y. Saint Laurent","A","055","355","T055"],
+["56","Ange ou Démon","Givenchy","A","056","356","T056"],
+["57","Omnia Améthyste","Bulgari","A","057","357","T057"],
+["61","Invictus","P. Rabanne","A","061","361","T061"],
+["62","Intenso","D&G","A","062","362","T062"],
+["64","Omnia Indian Garnet","Bulgari","A","064","364","T064"],
+["67","Olympéa","P. Rabanne","A","067","367","T067"],
+["68","Aventus","Creed","B","068","368","T068"],
+["69","Acqua di Sale","P. Roma","A","069","369","T069"],
+["70","The One","D&G","A","070","370","T070"],
+["71","Allure","Chanel","A","071","371","T071"],
+["72","Patchouli","Reminiscence","A","072","372","T072"],
+["73","Himalaya","Creed","C","073","373","T073"],
+["74","Black Afgano","Nasomatto","E","074","T074"],
+["75","\"X\" for Men","Clive Christian","E","075","T075"],
+["76","Acqua di Gioia","G. Armani","A","076","376","T076"],
+["79","Myslf","Y. Saint Laurent","A","079","379","T079"],
+["80","Si","G. Armani","A","080","380","T080"],
+["81","Classique Essence","J.P. Gaultier","A","081","381","T081"],
+["82","Signorina","S. Ferragamo","A","082","382","T081"],
+["84","Dylan Blue","Versace","A","084","384","T084"],
+["85","Chance","Chanel","A","085","385","T085"],
+["86","Legend","Mont Blanc","A","086","386","T086"],
+["87","Wanted","Azzaro","A","087","387","T087"],
+["88","Man in Black","Bulgari","A","084","3088","T088"],
+["89","Mon Paris","Y. Saint Laurent","A","089","389","T089"],
+["90","Poison Girl","C. Dior","A","090","390","T090"],
+["91","Chrome","Azzaro","A","091","391","T091"],
+["93","Aventus for Her","Creed","B","093","393","T093"],
+["94","Sauvage","C. Dior","C","094","394","T094"],
+["96","Gabrielle","Chanel","A","296","3296","T296"],
+["97","Amo Ferragamo","S. Ferragamo","A","097","397","T097"],
+["98","Joy","C. Dior","A","098","398","T098"],
+["99","Mandarino di Amalfi","T. Ford","D","099","399","T099"],
+["100","White Aoud","Montale","A","100","3100","T100"],
+["101","Velvet Amber Skin","D&G","E","101","T101"],
+["102","Velvet Amber Sun","D&G","E","102","T102"],
+["105","Intense Café","Montale","A","105","3105","T105"],
+["106","Fucking Fabulous","T. Ford","E","106","T106"],
+["109","J'Adore l'Or","C. Dior","E","109","T109"],
+["110","Kirké","T. Terenzi","C","110","3110","T110"],
+["111","Lost Cherry","T. Ford","E","111","T111"],
+["112","Neroli Portofino","T. Ford","E","112","T112"],
+["113","Sur la Route","L. Vuitton","B","113","3113","T113"],
+["114","Ombre Nomade","L. Vuitton","C","114","3114","T114"],
+["115","Idôle","Lancôme","A","115","3115","T115"],
+["116","Yes I Am","Cacharel","A","116","3116","T116"],
+["117","Tobacco Vanille","T. Ford","E","117","T117"],
+["118","Baccarat Rouge 540","Maison Francis K.","E","118","T118"],
+["119","Scandal","J.P. Gaultier","A","119","3119","T119"],
+["120","La Petite Robe Noire","Guerlain","A","120","3120","T120"],
+["121","L'Interdit","Givenchy","G","121","3121","T121"],
+["122","Libre","Y. Saint Laurent","C","122","3122","T122"],
+["123","Good Girl Gone Bad","Kilian","E","123","T123"],
+["124","Zeta","Morph","E","124","T124"],
+["125","Sole di Positano Acqua","T. Ford","E","125","T125"],
+["126","Soleil Blanc","T. Ford","E","126","T126"],
+["127","Oud Wood","T. Ford","E","127","T127"],
+["128","Vanille Fatale","T. Ford","E","128","T128"],
+["129","Erba Pura","Xerjoff","E","129","T129"],
+["130","Megamare","Orto Parisi","F","130","T130"],
+["131","Good Girl","C. Herrera","C","131","3131","T131"],
+["132","My Way","G. Armani","D","132","3132","T132"],
+["133","Prada Paradoxe","Prada","A","133","3133","T133"],
+["134","Bitter Peach","T. Ford","E","134","T134"],
+["135","Bois d'Argent","C. Dior","B","135","3135","T135"],
+["136","Dior Homme Intense","C. Dior","D","136","3136","T146"],
+["137","XJ 1861 Naxos","Xerjoff","E","137","T137"],
+["138","Whood Whisper","Ojar","E","138","T138"],
+["139","Les Sables Roses","Louis Vuitton","F","139","T139"],
+["140","Éros","Versace","A","140","3140","T140"],
+["141","Turath","The Spirit of Dubaï","F","141","T141"],
+["142","Ombré Leather","Tom Ford","B","142","3142","T142"],
+["143","Vanille Powder","Matière Première","E","143","T143"],
+["144","Bianco Latte","Giardini di Toscana","E","144","T144"],
+["145","Dévotion","D&G","A","145","3145","T145"],
+["146U","Rouge","Balmain","E","146U","T146U"],
+["147M","BOSS Bottled Absolu","H. Boss","A","147M","3147M","T147M"],
+["148W","Goddess","Burberry","A","148W","3148W","T148W"],
+["150M","Hugo","H. Boss","A","150M","3150M","T150M"],
+["151W","Guilty","Gucci","A","151W","3151W","T151W"],
+["152M","Guilty","Gucci","A","152M","3152M","T152M"],
+["153W","Chloé","Chloé","A","153W","3153W","T153W"],
+["154W","Love Chloé","Chloé","A","154W","3154W","T154W"],
+["155U","CK One","C. Klein","A","155U","3155U","T155U"],
+["156W","Hugo","H. Boss","A","156W","3156W","T156W"],
+["157W","The Scent","H. Boss","A","157W","3157W","T157W"],
+["158W","Flora","Gucci","A","158W","3158W","T158W"],
+["159W","Burberry","Burberry","A","159W","3159W","T159W"],
+["160M","Burberry for men","Burberry","A","160M","3160M","T160M"],
+["161W","Born In Roma Intense","Valentino","A","161W","3161W","T161W"],
+["162M","Born In Roma Intense","Valentino","A","162M","3162M","T162M"],
+["163W","Miutine","Miu Miu","D","163W","3163W","T163W"],
+["164M","Paradigme","Prada","D","164M","3164M","T164M"]
+];
+
+const GENDER = {W:"Femme",M:"Homme",U:"Mixte"};
+const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const euro = n => n.toFixed(2).replace(".",",")+" €";
+
+const items = DATA.map(r=>{
+  const [num,name,brand,tier,...codes]=r;
+  const sizes = TIERS[tier].map((s,i)=>({size:s[0],price:s[1],code:codes[i]}));
+  const letter = /[WMU]$/.test(num) ? num.slice(-1) : "";
+  const n = parseInt(num,10);
+  return {num,n,name,brand,sizes,gender:GENDER[letter]||"",
+    min:Math.min(...sizes.map(s=>s.price)),
+    hay:norm([num,name,brand,GENDER[letter]||"",...codes].join(" "))};
+});
+
+const list=document.getElementById("list"),q=document.getElementById("q"),
+      brandSel=document.getElementById("brand"),sortSel=document.getElementById("sort"),
+      count=document.getElementById("count");
+
+[...new Set(items.map(i=>i.brand))].sort((a,b)=>a.localeCompare(b,"fr")).forEach(b=>{
+  const o=document.createElement("option");o.value=b;o.textContent=b;brandSel.appendChild(o);
+});
+
+const esc = s => s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function render(){
+  const tokens = norm(q.value.trim()).split(/\s+/).filter(Boolean);
+  let res = items.filter(i =>
+    (!brandSel.value || i.brand===brandSel.value) &&
+    tokens.every(t=>i.hay.includes(t)));
+  const s = sortSel.value;
+  res.sort((a,b)=> s==="name" ? a.name.localeCompare(b.name,"fr")||a.n-b.n
+                  : s==="price" ? a.min-b.min||a.n-b.n : a.n-b.n);
+  count.textContent = res.length+" parfum"+(res.length>1?"s":"")+" trouvé"+(res.length>1?"s":"");
+  list.innerHTML = res.length ? res.map(i=>`
+    <article class="card">
+      <div class="num">${esc(i.num)}</div>
+      <h2>${esc(i.name)}${i.gender?`<span class="gender">${i.gender}</span>`:""}</h2>
+      <div class="brand">${esc(i.brand)}</div>
+      <table>${i.sizes.map(z=>`<tr><td>${z.size}</td><td class="code">${esc(z.code)}</td><td class="price">${euro(z.price)}</td></tr>`).join("")}</table>
+    </article>`).join("") : '<div class="empty">Aucun résultat 😕</div>';
+}
+[q,brandSel,sortSel].forEach(e=>e.addEventListener("input",render));
+render();
+})();</script>
+
+</body></html>
